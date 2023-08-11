@@ -39,13 +39,26 @@ header .menu-div {
 header .menu-div ul {
   display: grid;
   align-items: center;
-  grid-template-columns: 60px 120px 5fr repeat(5, 1fr);
+  grid-template-columns: 60px 120px 2fr repeat(3, 1fr) 100px;
   color: rgb(255, 255, 255);
   gap: 5px;
 }
 
 header .menu-div ul li {
   list-style: none;
+  font-size: 20px;
+}
+
+header .menu-div ul .header-li {
+  text-align: center;
+}
+header .menu-div ul .header-li a {
+  padding-left: 7px;
+}
+header .menu-div ul .header-li a:hover {
+  transition: color 800ms, border-color 800ms, border-width 200ms;
+  color: rgb(235, 190, 135);
+  border-left: 2px solid rgb(235, 190, 135);
 }
 
 header .header-svg {
@@ -693,24 +706,23 @@ footer .section-7 .s7d-1 {
   width: 70%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0px auto 5vw;
 }
 
 footer .section-7 .s7d-1 svg {
-  display: block;
-  text-align: center;
   width: 40px;
   height: 40px;
-}
-footer .section-7 .s7d-1 svg path {
-  fill: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(203, 199, 190);
+  transition: background-color 1500ms;
 }
 footer .section-7 .s7d-1 svg:hover {
-  transform: translateY(-10px);
-  scale: 1.1;
+  background-color: black;
 }
 footer .section-7 .s7d-1 svg:hover path {
-  fill: rgb(0, 0, 0);
+  fill: rgb(203, 199, 190);
 }
 
 footer .s7d-2 {

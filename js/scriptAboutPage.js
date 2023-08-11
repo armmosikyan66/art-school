@@ -1,4 +1,4 @@
-const dialog = document.querySelector('.menu')
+const dialog = document.querySelector('.dialog')
 const menuSvg = document.querySelector(".header-svg")
 const menuLi = document.querySelector(".menu-li")
 

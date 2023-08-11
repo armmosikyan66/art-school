@@ -1,6 +1,6 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     header {
-        max-width: 500px;
+       
         width: 100%;
         position: relative;
         height: 869px;
@@ -36,12 +36,12 @@
     header .menu-div ul .header-li {
         display: none;
     }
-    header .menu-div ul li {
-        color: rgb(203, 199, 190);
+    header .menu-div ul li a {
+        color: rgb(255, 255, 255);
         font-family: "Tekton Pro";
-        font-size: 15px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        
         line-height: normal;
     }
     header .dialog div {
@@ -260,7 +260,7 @@
         border-radius: 50%;
     }
     .section-2 {
-        max-width: 500px;
+        
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -307,7 +307,7 @@
     }
     .section-3 .s3d {
         width: 100vw;
-        max-width: 500px;
+        
         text-align: left;
         background-color: rgb(44, 48, 52);
         padding: 50px;

@@ -1,17 +1,17 @@
-@media screen and (max-width: 500px) {
-  header .header-li {
-    display: none;
+@media screen and (max-width: 600px) {
+  header .header-div {
+    width: 100%;
+    height: 100%;
+    padding-block: 20px;
   }
-  header .menu-li {
-    display: block;
+  header .menu-div ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 120px 1fr 1fr;
+    justify-items: end;
+    gap: 5px;
   }
-  header .menu-div ul svg {
-    width: 50px;
-  }
-  header .header-svg {
-    cursor: pointer;
-  }
-  .menu {
+  header .dialog {
     display: none;
     width: 150px;
     height: -moz-fit-content;
@@ -19,26 +19,50 @@
     position: absolute;
     right: 0px;
     left: 55%;
-    top: 100px;
-    background-color: rgba(12, 18, 23, 0.7);
+    top: 80px;
+    border-radius: 15px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     -o-border-image: initial;
        border-image: initial;
     margin-inline: auto;
+  }
+  header .menu-div ul .header-li {
+    display: none;
+  }
+  header .menu-div ul li a {
+    color: rgb(255, 255, 255);
+    font-family: "Tekton Pro";
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+  }
+  header .dialog div {
+    background-color: rgba(44, 48, 52, 0.7);
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     padding: 10px;
   }
-  .menu p {
+  header .dialog div p {
     cursor: pointer;
     position: relative;
     text-align: left;
     margin-bottom: 20px;
     padding: 5px;
   }
-  .menu p a {
-    color: rgb(217, 217, 217);
+  header p {
+    margin-bottom: 60px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .dialog div p a {
+    color: rgb(177, 172, 161);
     font-family: "Open Sans";
     font-size: 12px;
     font-style: normal;
@@ -46,30 +70,65 @@
     line-height: 150%;
     text-decoration: none;
   }
-  header .menu-div ul {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 50px 1fr 3fr 1fr;
-    gap: 5px;
+  header .menu-div ul li {
+    color: rgb(255, 255, 255);
+    font-family: "Tekton Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
-  header .content-div ul {
+  header .header-svg {
     display: block;
   }
-  .menu p::after {
+  header .menu-div ul li svg {
+    cursor: pointer;
+  }
+  header .dialog {
+    display: none;
+    width: 150px;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0px;
+    left: 55%;
+    top: 80px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(9, 55, 96);
+    -o-border-image: initial;
+       border-image: initial;
+    margin-inline: auto;
+  }
+  header .dialog div {
+    background-color: rgba(162, 213, 231, 0.6);
+  }
+  header .dialog div p {
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  header .dialog div p a {
+    color: rgb(19, 65, 106);
+  }
+  header .dialog div p::after {
     position: absolute;
     content: "";
     transform: translateX(-50%);
     width: 100%;
     bottom: -10px;
     left: 50%;
-    border-bottom: 1px solid rgb(191, 203, 207);
+    border-bottom: 1px solid rgb(27, 97, 137);
   }
-  .menu p:hover {
-    background-color: rgb(199, 199, 206);
+  .dialog p:hover {
+    background-color: rgba(27, 97, 137, 0.7);
     border-radius: 10px;
   }
-  .menu p:hover a {
-    color: black;
+  .dialog p:hover a {
+    color: aliceblue;
   }
   @keyframes opacity {
     0% {

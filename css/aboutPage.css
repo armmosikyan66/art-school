@@ -6,10 +6,31 @@
 
 header {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-inline: clamp(20px, 5vw, 140px);
-  padding-block: 40px;
+  position: relative;
+  height: 700px;
+  margin: 0px auto;
+}
+header svg path {
+  fill: white;
+}
+
+header::before {
+  background-image: url("../assets/About page images/Rectangle 53 (2).png");
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  background-position: center center;
+}
+
+header .header-div {
+  width: 100%;
+  height: 100%;
+  padding-block: 30px;
 }
 
 header .menu-div {
@@ -20,70 +41,111 @@ header .menu-div {
 header .menu-div ul {
   display: grid;
   align-items: center;
-  grid-template-columns: 60px 5fr 5fr repeat(5, 3fr);
-  color: rgb(0, 0, 0);
+  grid-template-columns: 60px 120px 2fr repeat(3, 1fr) 100px;
+  color: rgb(255, 255, 255);
   gap: 5px;
 }
 
-header .menu-div ul .li, header .menu-div ul li {
-  font-size: clamp(18px, 2.6vw, 26px);
+header .menu-div ul li {
   list-style: none;
+  font-size: 20px;
 }
 
-header .menu-li, header .menu {
+header .menu-div ul .header-li {
+  text-align: center;
+}
+header .menu-div ul .header-li a {
+  padding-left: 7px;
+}
+header .menu-div ul .header-li a:hover {
+  transition: color 800ms, border-color 800ms, border-width 200ms;
+  color: rgb(13, 55, 93);
+  border-left: 2px solid rgb(6, 46, 81);
+}
+
+header .header-svg {
   display: none;
+  rotate: 0deg;
+  transition: rotate 600ms ease 0s;
 }
 
-header .content-div {
-  margin-top: clamp(20px, 40vw, 140px);
+header .dialog {
+  display: none;
+  animation: 600ms ease 0s 1 normal none running opacity;
 }
 
-header .menu-div ul {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 60px 5fr 5fr repeat(5, 3fr);
-  color: rgb(0, 0, 0);
-  gap: 5px;
+header .central-div {
+  text-align: center;
+  margin: clamp(100px, 12.5vw, 200px) auto 0px;
 }
 
-header .content-div ul li {
-  color: rgb(0, 0, 0);
+header .central-div h1 {
+  color: rgb(203, 199, 190);
   font-family: Teko;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header p {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-block: 2rem;
+  max-width: 800px;
+  margin: 0px auto;
 }
 
-header .content-div ul {
-  display: block;
+header .btns-div {
+  margin-top: clamp(50px, 6.5vw, 100px);
+  text-align: center;
+}
+
+header .btns-div button {
+  color: rgb(44, 48, 52);
+  width: 204px;
+  height: 78px;
+  flex-shrink: 0;
+  background-color: rgb(203, 199, 190);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 5px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(203, 199, 190);
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+header .btns-div button {
+  color: rgb(44, 48, 52);
+  width: 204px;
+  height: 78px;
+  flex-shrink: 0;
+  background-color: rgb(203, 199, 190);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 5px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(203, 199, 190);
 }
 
 header .menu-div ul li a {
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans";
-  font-size: clamp(16px, 2.6vw, 30px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
   text-decoration: none;
-}
-
-header .content-div ul li {
-  color: rgb(0, 0, 0);
-  font-family: Teko;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-block: 2rem;
-}
-
-header .menu-li, header .menu {
-  display: none;
-  animation: 800ms ease 0s 1 normal none running opacity;
-  display: none;
 }
 
 .section-1 {
@@ -220,7 +282,8 @@ footer .section-6 {
   padding: clamp(40px, 6vw, 120px);
 }
 
-footer .section-6 .s6d-1, footer .section-6 .s6d-3 {
+footer .section-6 .s6d-1,
+footer .section-6 .s6d-3 {
   color: rgb(255, 255, 255);
   font-family: "Open Sans";
   font-size: clamp(12px, 2.5vw, 24px);
@@ -228,8 +291,19 @@ footer .section-6 .s6d-1, footer .section-6 .s6d-3 {
   font-weight: 400;
   line-height: normal;
 }
+footer .section-6 .s6d-1 a,
+footer .section-6 .s6d-3 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-footer .section-6 .s6d-1 *, footer .section-6 .s6d-3 * {
+footer .section-6 .s6d-1 *,
+footer .section-6 .s6d-3 * {
   margin-bottom: 1rem;
   list-style: none;
 }
@@ -265,9 +339,18 @@ footer .section-7 .s7d-1 {
 }
 
 footer .section-7 .s7d-1 svg {
-  display: block;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(203, 199, 190);
+  transition: background-color 1000ms;
+}
+footer .section-7 .s7d-1 svg:hover {
+  background-color: rgb(0, 0, 0);
+}
+footer .section-7 .s7d-1 svg:hover path {
+  fill: rgb(203, 199, 190);
 }
 
 footer .s7d-2 {
