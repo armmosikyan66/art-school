@@ -542,6 +542,15 @@
         padding: clamp(40px, 6vw, 120px);
     }
     footer .section-6 .s6d-1, footer .section-6 .s6d-3 {
+        a{
+            color: rgb(255, 255, 255);
+        text-align: left;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        }
         color: rgb(255, 255, 255);
         text-align: left;
         font-family: "Open Sans";

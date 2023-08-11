@@ -255,9 +255,7 @@ header .menu-div ul li a {
 }
 
 .section-1 .sec1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 420px;
+  display: flex;
 }
 
 .section-2 {
@@ -273,7 +271,7 @@ header .menu-div ul li a {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding: 125px;
+  padding: clamp(40px, 6vw, 120px);
 }
 
 .section-2 .s2d-1 h2 {
@@ -345,7 +343,7 @@ header .menu-div ul li a {
 .section-3 .s3d {
   max-width: 100vw;
   background-color: rgb(44, 48, 52);
-  padding: clamp(40px, 40vw, 180px);
+  padding: clamp(40px, 6vw, 140px);
 }
 
 .section-3 .s3d h3 {
@@ -407,7 +405,6 @@ header .menu-div ul li a {
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(44, 48, 52);
-  padding-block: 100px;
   margin: 0px auto;
 }
 
@@ -483,7 +480,7 @@ header .menu-div ul li a {
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(246, 246, 244);
-  padding: 120px;
+  padding: clamp(40px, 6vw, 120px);
   margin: 0px auto;
   gap: 5%;
 }
@@ -495,7 +492,7 @@ header .menu-div ul li a {
 .section-5 .s5d .s5d-div1 {
   display: grid;
   grid-template-columns: 3fr 1fr 5fr;
-  padding: 50px 120px;
+  padding: clamp(20px, 3vw, 50px) clamp(40px, 6vw, 120px);
 }
 
 .section-5 .s5d .s5d-div1 .s5d-div1-child1 {
@@ -640,6 +637,20 @@ footer .section-6 {
   justify-content: space-between;
   padding: clamp(40px, 6vw, 120px);
 }
+footer .section-6 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .section-6 li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  font-size: clamp(12px, 2.5vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 footer .section-6 .s6d-1, footer .section-6 .s6d-3 {
   color: rgb(255, 255, 255);
@@ -666,9 +677,9 @@ footer .section-6 .s6d-2 .p2 {
 }
 
 footer .section-6 .s6d-2 svg {
-  display: block;
   width: 100%;
-  text-align: center;
+  aspect-ratio: 1;
+  margin: 0 auto;
 }
 
 footer .section-7 {
@@ -687,8 +698,19 @@ footer .section-7 .s7d-1 {
 
 footer .section-7 .s7d-1 svg {
   display: block;
-  width: 32px;
-  height: 32px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+footer .section-7 .s7d-1 svg path {
+  fill: rgba(0, 0, 0, 0.7);
+}
+footer .section-7 .s7d-1 svg:hover {
+  transform: translateY(-10px);
+  scale: 1.1;
+}
+footer .section-7 .s7d-1 svg:hover path {
+  fill: rgb(0, 0, 0);
 }
 
 footer .s7d-2 {
