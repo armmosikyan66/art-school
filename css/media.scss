@@ -104,6 +104,9 @@
         border-color: black;
         border-image: initial;
         margin-inline: auto;
+        div{
+            height: 100%;
+        }
     }
     header .dialog div p {
         cursor: pointer;

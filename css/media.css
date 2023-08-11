@@ -107,6 +107,9 @@
        border-image: initial;
     margin-inline: auto;
   }
+  header .dialog div {
+    height: 100%;
+  }
   header .dialog div p {
     cursor: pointer;
     position: relative;
