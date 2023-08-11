@@ -1,0 +1,715 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  height: 869px;
+  margin: 0px auto;
+}
+
+header::before {
+  background-image: url("../assets/images/billetto-editorial-YvLd3xbo0ac-unsplash 1 (1).png");
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(60%) brightness(0.6);
+  z-index: -1;
+  background-position: center center;
+}
+
+header .header-div {
+  width: 100%;
+  height: 100%;
+  padding-block: 30px;
+}
+
+header .menu-div {
+  width: 90%;
+  margin: 0px auto;
+}
+
+header .menu-div ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 120px 5fr repeat(5, 1fr);
+  color: rgb(255, 255, 255);
+  gap: 5px;
+}
+
+header .menu-div ul li {
+  list-style: none;
+}
+
+header .header-svg {
+  display: none;
+  rotate: 0deg;
+  transition: rotate 600ms ease 0s;
+}
+
+header .dialog {
+  display: none;
+  animation: 600ms ease 0s 1 normal none running opacity;
+}
+
+header .central-div {
+  text-align: center;
+  margin: clamp(100px, 12.5vw, 200px) auto 0px;
+}
+
+header .central-div h1 {
+  color: rgb(203, 199, 190);
+  font-family: Teko;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header p {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+header .btns-div {
+  margin-top: clamp(50px, 6.5vw, 100px);
+  text-align: center;
+}
+
+header .btns-div button {
+  color: rgb(44, 48, 52);
+  width: 204px;
+  height: 78px;
+  flex-shrink: 0;
+  background-color: rgb(203, 199, 190);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 5px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(203, 199, 190);
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+header .btns-div button {
+  color: rgb(44, 48, 52);
+  width: 204px;
+  height: 78px;
+  flex-shrink: 0;
+  background-color: rgb(203, 199, 190);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 5px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(203, 199, 190);
+}
+
+header .menu-div ul li a {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.section-1 {
+  margin: 0px auto;
+}
+
+.section-1 .sec1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 420px;
+  transform: translateX(0%);
+  transition: transform 700ms ease 0s;
+}
+
+.section-1 .section-div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.section-1 .sd1 {
+  position: relative;
+}
+
+.section-1 .sd1::before {
+  background-image: url("../assets/images/jumb-1.png");
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(60%) brightness(0.6);
+  z-index: -1;
+  background-position: center center;
+}
+
+.section-1 h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Teko;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-1 .sd2 {
+  position: relative;
+}
+
+.section-1 .section-div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.section-1 p {
+  color: rgb(203, 199, 190);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-1 .sd2::before {
+  background-image: url(../assets/images/jumb-2.png);
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(60%) brightness(0.6);
+  z-index: -1;
+  background-position: center center;
+}
+
+.section-1 .sd3::before {
+  background-image: url(../assets/images/jumb-3.png);
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(60%) brightness(0.6);
+  z-index: -1;
+  background-position: center center;
+}
+
+.section-1 .sd4::before {
+  background-image: url(../assets/images/jumb-4.png);
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(60%) brightness(0.6);
+  z-index: -1;
+  background-position: center center;
+}
+
+.section-1 .section-div {
+  position: relative;
+}
+
+.section-1 .section-div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.section-1 .sec1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 420px;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 0px auto;
+}
+
+.section-2 .s2d-1 {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 125px;
+}
+
+.section-2 .s2d-1 h2 {
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-2 .s2d-2 {
+  position: relative;
+}
+
+.section-2 .s2d-2::before {
+  background-image: url("../assets/images/rahul-jain-JOYtT8_Y7c8-unsplash 1.png");
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  filter: none;
+  background-position: center center;
+}
+
+.section-2 .s2d-1 hr {
+  height: 7px;
+  width: 20%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  background: rgb(146, 53, 65);
+}
+
+.section-3 {
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-template-columns: 2fr 3fr;
+  margin: 0px auto;
+}
+
+.section-3 .img-div {
+  position: relative;
+}
+
+.section-3 .img-div::before {
+  background-image: url("../assets/images/Rectangle 22.png");
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  filter: none;
+  background-position: center center;
+}
+
+.section-3 .s3d {
+  max-width: 100vw;
+  background-color: rgb(44, 48, 52);
+  padding: clamp(40px, 40vw, 180px);
+}
+
+.section-3 .s3d h3 {
+  color: rgb(255, 255, 255);
+  font-family: Teko;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-3 .s3d hr {
+  height: 7px;
+  width: 20%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: rgb(146, 53, 65);
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+.section-3 .s3d span {
+  color: rgba(255, 255, 255, 0.45);
+  display: inline-block;
+  font-family: Teko;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.section-3 .s3d p {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-3 button {
+  margin-top: clamp(40px, 7vw, 120px);
+  height: 78px;
+  color: rgb(44, 48, 52);
+  font-family: Teko;
+  font-size: clamp(20px, 2.5vw, 36px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px 43px;
+  background: rgb(203, 199, 190);
+}
+
+.section-4 {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(44, 48, 52);
+  padding-block: 100px;
+  margin: 0px auto;
+}
+
+.section-4 {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(44, 48, 52);
+  padding-block: 100px;
+  margin: 0px auto;
+}
+
+.section-4 h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Teko;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-4 .s4d {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+  margin: 0px auto;
+}
+
+.section-4 .s4d .s4d-1, .section-4 .s4d .s4d-2, .section-4 .s4d .s4d-3 {
+  height: 470px;
+  width: 350px;
+  box-shadow: rgba(115, 113, 113, 0.25) 5px 3px 7px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.section-4 .s4d .s4d-1 h4, .section-4 .s4d .s4d-2 h4, .section-4 .s4d .s4d-3 h4 {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-4 .s4d .s4d-1 span, .section-4 .s4d .s4d-2 span, .section-4 .s4d .s4d-3 span {
+  color: rgba(44, 48, 52, 0.48);
+  font-family: Teko;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-4 .s4d .s4d-1 a, .section-4 .s4d .s4d-2 a, .section-4 .s4d .s4d-3 a {
+  color: rgb(76, 77, 226);
+  margin-top: 50px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.section-5 {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(246, 246, 244);
+  padding: 120px;
+  margin: 0px auto;
+  gap: 5%;
+}
+
+.section-5 .s5d {
+  background-color: rgb(255, 255, 255);
+}
+
+.section-5 .s5d .s5d-div1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 5fr;
+  padding: 50px 120px;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child1 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child1 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child2 {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child2 {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child2 a {
+  text-decoration-line: none;
+  margin-top: 20px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section-5 .s5d .s5d-div1 .s5d-div1-child2 {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-5 .s5d .s5d-div2 {
+  height: 886px;
+  position: relative;
+  background-image: url("../assets/images/Rectangle 26.png");
+}
+
+.section-5 .wrapper {
+  position: absolute;
+  width: 80%;
+  height: 300px;
+  left: 0px;
+  right: 0px;
+  bottom: 120px;
+  margin-inline: auto;
+}
+
+.section-5 .wrapper .wrapper-div1 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20%;
+  text-align: center;
+  background-color: rgba(163, 164, 214, 0.79);
+}
+
+.section-5 .wrapper .wrapper-div1 p {
+  display: grid;
+  height: 70px;
+  color: rgb(44, 48, 52);
+  font-family: Teko;
+  font-size: clamp(12px, 3vw, 36px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  place-content: center;
+}
+
+.section-5 .wrapper .wrapper-div2 {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: clamp(20px, 5.5vw, 50px);
+}
+
+.section-5 .wrapper .wrapper-div2 b {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: clamp(8px, 4vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-5 .wrapper .wrapper-div2 h4 {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: clamp(8px, 4vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-block: 20px;
+}
+
+.section-5 .wrapper .wrapper-div2 .text-concat {
+  display: inline-block;
+  overflow-wrap: break-word;
+  max-height: 3.6em;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: clamp(8px, 2vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+footer .section-6 {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(44, 48, 52);
+  justify-content: space-between;
+  padding: clamp(40px, 6vw, 120px);
+}
+
+footer .section-6 .s6d-1, footer .section-6 .s6d-3 {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  font-size: clamp(12px, 2.5vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer .section-6 .s6d-1 *, footer .section-6 .s6d-3 * {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+footer .section-6 .s6d-2 .p2 {
+  color: rgb(203, 199, 190);
+  font-family: "Tekton Pro";
+  font-size: clamp(32px, 3vw, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+footer .section-6 .s6d-2 svg {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer .section-7 {
+  background-color: rgb(203, 199, 190);
+  height: 316px;
+  display: grid;
+  padding: clamp(40px, 10vw, 100px);
+}
+
+footer .section-7 .s7d-1 {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto 5vw;
+}
+
+footer .section-7 .s7d-1 svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+footer .s7d-2 {
+  text-align: center;
+}
+
+footer .s7d-2 p {
+  color: rgba(0, 0, 0, 0.44);
+  text-align: center;
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer .section-7 span {
+  color: rgb(0, 0, 0);
+  font-family: Teko;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,163 @@
+body {
+  background: rgb(246, 246, 244);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+user agent stylesheet
+body {
+  display: block;
+  margin: 8px;
+}
+
+header {
+  width: 100%;
+  max-height: 633px;
+  height: fit-content;
+  padding-inline: clamp(20px, 5vw, 140px);
+  padding-block: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+user agent stylesheet
+header {
+  display: block;
+}
+
+header .menu-div {
+  width: 90%;
+  margin: 0px auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+
+header .menu-div ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 5fr 5fr repeat(5, 3fr);
+  color: rgb(0, 0, 0);
+  gap: 5px;
+}
+
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+header .menu-div ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 5fr 5fr repeat(5, 3fr);
+  color: rgb(0, 0, 0);
+  gap: 5px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+header .menu-div ul .li, header .menu-div ul li {
+  font-size: clamp(18px, 2.6vw, 26px);
+  list-style: none;
+}
+
+header .menu-li, header .menu {
+  display: none;
+}
+
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+header .menu-div ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 5fr 5fr repeat(5, 3fr);
+  color: rgb(0, 0, 0);
+  gap: 5px;
+}
+
+header .menu-li, header .menu {
+  display: none;
+
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+}
+
+
+header .content-div {
+  margin-top: clamp(20px, 40vw, 140px);
+
+}
+
+header .content-div p {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: clamp(14px, 2.6vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+header .menu-div ul li a {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: clamp(16px, 2.6vw, 30px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.section-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: clamp(40px, 6vw, 120px);
+ 
+}
+
+.sd-child{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.sc1 , .sc3 , .sc6 , .sc7 , .sc9{
+  height: 485px;
+}
