@@ -179,14 +179,14 @@
     }
     
     header .btns-div {
-        margin-top: clamp(50px, 6.5vw, 100px);
+        margin-top: clamp(30px, 6vw, 70px);
         text-align: center;
     }
     header .btns-div button {
         color: rgb(44, 48, 52);
         margin-bottom: 25px;
         width: 80%;
-        height: 78px;
+        height: clamp(50px, 6vw, 70px);
         flex-shrink: 0;
         background-color: rgb(203, 199, 190);
         font-family: Teko;
